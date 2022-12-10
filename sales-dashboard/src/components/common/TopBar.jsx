@@ -4,7 +4,7 @@ import MenuIcon from '@mui/icons-material/Menu'
 export default function TopBar( props ) {
     return (
         
-        <AppBar sx={{ position: "sticky" }}>
+        <AppBar sx={{ position: "sticky", bgcolor: "#167" }}>
             <Toolbar sx={{ display: "flex" }}>
                 <IconButton
                     size="large"

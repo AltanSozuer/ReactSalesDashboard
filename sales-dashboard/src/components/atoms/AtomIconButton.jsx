@@ -14,7 +14,7 @@ export default function AtomIconButton({
     onClick,
     children
 }) {
-    console.log("Chilasdasd: ", children);
+    
     return (
         <IconButton
             color={ color }
