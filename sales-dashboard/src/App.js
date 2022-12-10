@@ -1,16 +1,16 @@
 import TopBar from "./components/common/TopBar";
-import { Stack } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import SideBar from "./components/common/SideBar";
+import HomePage from "./pages/HomePage";
 function App() {
   return (
-    <div >
-      
+    <Box>
       <TopBar />
-      <Stack direction="row" spacing={2} justifyContent="space-between">
-        <SideBar></SideBar>
-        
+      <Stack direction="row" spacing={1} justifyContent="space-between">
+        <SideBar />
+        <HomePage />
       </Stack>
-    </div>
+    </Box>
   );
 }
 
