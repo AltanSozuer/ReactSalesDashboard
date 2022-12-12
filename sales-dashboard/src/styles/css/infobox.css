@@ -21,7 +21,9 @@
 
 .amountLine {
     display: flex;
+    font-size: larger;
 }
+
 .amount {
     margin: 10px 0px;
     display: flex;
