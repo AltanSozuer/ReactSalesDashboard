@@ -1,0 +1,9 @@
+.linkRoute {
+    color: black;
+    text-decoration: none;
+}
+
+.iconAndTextContainer {
+    display: flex;
+    align-items: center;
+}
