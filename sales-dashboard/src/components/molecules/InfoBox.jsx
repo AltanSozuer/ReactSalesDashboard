@@ -13,13 +13,11 @@ export default function InfoBox({
             <div className="infoItem">
                     <AtomSpan 
                         text={ BoxTitle }
-                        className="title"
-                        />
+                        className="title" />
                     <div className="amountLine">
                         <AtomSpan 
                             text={ Amount }
-                            className="amount"
-                        />
+                            className="amount" />
                         <AtomSpan 
                             text={ amountRate }
                             className="amountRate">
@@ -28,8 +26,7 @@ export default function InfoBox({
                     </div>
                     <AtomSpan 
                         text={ SubTitle }
-                        className="subTitle"
-                        />
+                        className="subTitle"/>
                 
             </div>
         )  
