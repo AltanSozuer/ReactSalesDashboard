@@ -1,10 +1,11 @@
 import { LineChart, Line, XAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { ACTIVE_USER_COUNT } from "../../DummyData/MonthlyActiveUser"
 import "../../styles/css/chart.css"
+import "../../styles/css/shared/shadowbox.css"
 
 export default function LineCharts(props){
     return (
-        <div className='chart'>
+        <div className='chart shadow-box' >
             <h3 className='chartTitle'>Monthly Active Users</h3>
             <ResponsiveContainer width="100%" aspect={ 5 / 2 }>
                 <LineChart

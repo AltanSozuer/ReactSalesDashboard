@@ -1,4 +1,5 @@
 import "../../styles/css/infobox.css"
+import "../../styles/css/shared/shadowbox.css"
 import AtomSpan from "../atoms/AtomSpan";
 import { ArrowUpward, ArrowDownward } from "@mui/icons-material";
 
@@ -10,7 +11,7 @@ export default function InfoBox({
 }) {
     
         return (
-            <div className="infoItem">
+            <div className="infoItem shadow-box">
                     <AtomSpan 
                         text={ BoxTitle }
                         className="title" />

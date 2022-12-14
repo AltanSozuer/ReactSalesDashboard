@@ -11,7 +11,6 @@ export default function AtomButton({
     onClick,
     children
 }) {
-    console.log("Chilasdasd: ", children);
     return (
         <Button
             color={ color }
@@ -41,7 +40,8 @@ AtomButton.propTypes = {
     ]),
     text: PropTypes.string,
     variant: PropTypes.oneOf([
-        "contained"
+        "contained",
+        "outlined"
     ]),
     disabled: PropTypes.bool,
     size: PropTypes.oneOf([

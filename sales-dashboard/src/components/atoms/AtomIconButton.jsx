@@ -10,6 +10,7 @@ export default function AtomIconButton({
     disabled,
     size,
     sx,
+    className,
     component,
     onClick,
     children
@@ -24,6 +25,7 @@ export default function AtomIconButton({
             size={ size }
             aria-label={ aria_label }
             edge={ edge }
+            className={ className }
             sx={ sx }
             onClick= { onClick }
         >
