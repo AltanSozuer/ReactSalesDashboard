@@ -1,0 +1,43 @@
+.large-outer-container {
+    flex: 2;
+}
+
+.table-title {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 20px; 
+}
+
+.tableCont {
+    width: 100%;
+    border-spacing: 20px;
+}
+
+.table-tr {
+    text-align: left;
+}
+
+.table-th {
+    align-items: center;
+}
+
+.table-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.table-th-user {
+    display: flex;
+    align-items: center;
+}
+
+.th-date {
+    font-weight: 200;
+}
+
+.th-amount {
+    font-weight: 200;
+}
