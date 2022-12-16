@@ -12,8 +12,7 @@ import ListItemComposition from "../organisms/ListItemComposition";
 
 export default function SideBar(props) {
   return (
-      <Box bgcolor={"aliceblue"} flex={1} p={2} sx={{ height: "calc(100vh - 50px )" ,display: { xs: "none", sm: "block" } }}>
-        <Box position="fixed">
+      <Box bgcolor={"aliceblue"}  flex={1} p={2} sx={{ minHeight: "calc(150vh - 10px )" ,display: {  sm: "block" }, position:"sticky", top: 0 }}>
           <List >
             <ListItemComposition to="/"
                   icon= { <Home />}
@@ -40,9 +39,7 @@ export default function SideBar(props) {
                   icon= { <Settings />}
                   text="Settings"
                   disablePadding={true} />
-            
           </List>
-        </Box>
       </Box>
   )
 }
