@@ -25,11 +25,16 @@ export default function Users() {
       field: 'id',
       headerName: 'ID', 
       width: 80,
+      align: "center",
+      headerAlign: "center",
+      flex: 1
     },
     { 
       field: 'fullName', 
       headerName: 'Full Name', 
       width: 250,
+      headerAlign: "center",
+      flex: 3,
       renderCell: ( params ) => {
         return (
           <div className='fullname'>
@@ -43,12 +48,18 @@ export default function Users() {
     { 
       field: 'email', 
       headerName: 'Email', 
-      width: 200 
+      width: 200 ,
+      align: "center",
+      headerAlign: "center",
+      flex: 2,
     },
     { 
       field: 'status', 
       headerName: 'Status', 
       width: 120 ,
+      align: "center",
+      headerAlign: "center",
+      flex: 2,
       renderCell: ( params ) => {
         return (
           <Chip 
@@ -62,11 +73,17 @@ export default function Users() {
       field: 'total_transaction',
       headerName: 'Total Transaction',
       width: 200,
+      align: "center",
+      headerAlign: "center",
+      flex: 1,
     },
     {
       field: 'action',
       headerName: 'Actions',
       width: 150,
+      align: "center",
+      headerAlign: "center",
+      flex: 2,
       renderCell: ( params ) => {
         return (
           <div className='action-container'>
@@ -97,7 +114,7 @@ export default function Users() {
          style={{ height: "80%", width: '95%', margin: "20px 10px" }}>
       <DataGrid
         rows={data}
-        columns={ columns }
+        columns={ columns}
         pageSize={10}
         autoPageSize
         density="comfortable" 
