@@ -58,6 +58,6 @@ AtomButton.defaultProps = {
     text: "Default Button Text",
     variant: "contained",
     disabled: false,
-    size: "large"
+    size: "medium"
 }
 

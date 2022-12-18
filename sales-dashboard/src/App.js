@@ -4,7 +4,9 @@ import SideBar from "./components/common/SideBar";
 import HomePage from "./pages/HomePage";
 import { Routes, Route } from 'react-router-dom'
 import Products from "./pages/Products";
+import User from "./pages/User";
 import Users from "./pages/Users";
+import NewUser from "./pages/NewUser";
 import Transactions from "./pages/Transactions";
 import Sales from "./pages/Sales";
 import Settings from "./pages/Settings";
@@ -19,6 +21,8 @@ function App() {
             <Routes>
               <Route path={"/"} element={ <HomePage />} />
               <Route path={"/user"} element={ <Users />} />
+              <Route path={"/user/:id"} element={ <User />} />
+              <Route path={"/newUser"} element={ <NewUser />} />
               <Route path={"/product"} element={ <Products />} />
               <Route path={"/transaction"} element={ <Transactions />} />
               <Route path={"/sales"} element={ <Sales />} />
