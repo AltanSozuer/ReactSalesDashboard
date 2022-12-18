@@ -1,0 +1,103 @@
+.user-container {
+    flex: 4;
+    padding: 25px;
+}
+
+.user-header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-header {
+    font-weight: 300;
+}
+
+.editUser-container {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.editUser-info-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.editUser-info-upside-container {
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.editUser-info-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 15px 25px;
+}
+
+.editUser-info-username-job-container {
+    flex-direction: column;
+    display: flex;
+}
+
+.editUser-info-username {
+    font-weight: 400;
+    font-size: larger;
+}
+
+.editUser-info-job {
+    font-weight: 200;
+    font-size: large;
+    color: gray;
+}
+
+.editUser-info-downside-container {
+    width: 100%;
+    padding: 10px;
+}
+
+.editUser-info-title {
+    color: gray;
+    margin-left: 10px;
+    font-weight: 100;
+    font-size: medium;
+}
+
+.editUser-info-personal-item {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.editUser-edit-container {
+    background-color: red;
+    flex: 3;
+}
+
+.editUser-edit-header {
+    font-size: 25px;
+    font-weight: 300;
+    margin: 10px 15px;
+}
+
+.editUser-edit-inner-container {
+    display: flex;
+}
+
+.editUser-edit-form-container {
+    flex: 2;
+    background-color: blue;
+    
+}
+
+.editUser-edit-upload-container {
+    flex: 1;
+    background-color: yellow;
+}
