@@ -6,6 +6,7 @@ import { Link } from "react-router-dom"
 import AtomSpan from "../components/atoms/AtomSpan";
 import { PermIdentity, CalendarMonthOutlined, LocalPhoneOutlined, EmailOutlined, LocationOnOutlined } from '@mui/icons-material';
 import { Tooltip } from "@mui/material";
+import UserEditForm from "../components/organisms/UserEditForm";
 
 export default function User(){
     return (
@@ -77,7 +78,7 @@ export default function User(){
                     <h2 className="editUser-edit-header">Edit</h2>
                     <div className="editUser-edit-inner-container">
                         <div className="editUser-edit-form-container">
-                            editUser-edit-form-container
+                            <UserEditForm />
                         </div>
                         <div className="editUser-edit-upload-container">
 editUser-edit-upload-container
