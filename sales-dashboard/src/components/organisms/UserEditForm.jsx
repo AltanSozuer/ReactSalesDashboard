@@ -1,49 +1,55 @@
 import AtomForm from "../atoms/AtomForm";
 import FormElement from "../molecules/FormElement";
 
-export default function UserEditForm(){
+export default function UserEditForm() {
+    // TODO: add "value" props to each component
     return (
         <div>
             <AtomForm>
-                <FormElement 
-                    labelFor="username" 
-                    labelText="Username" 
+                <FormElement
+                    className="editUser-edit-form-element"
+                    labelFor="username"
+                    labelText="Username"
                     classNameForLabel="editUser-form-label"
-                    inputType="text"
                     id="username"
                     name="username"
+                    size="small"
                     classNameForInput="editUser-form-input" />
-                <FormElement 
-                    labelFor="fullname" 
-                    labelText="Fullname" 
+                <FormElement
+                    className="editUser-edit-form-element"
+                    labelFor="fullname"
+                    labelText="Fullname"
                     classNameForLabel="editUser-form-label"
-                    inputType="text"
                     id="fullname"
                     name="fullname"
+                    size="small"
                     classNameForInput="editUser-form-input" />
-                <FormElement 
-                    labelFor="email" 
-                    labelText="Email" 
+                <FormElement
+                    className="editUser-edit-form-element"
+                    labelFor="email"
+                    labelText="Email"
                     classNameForLabel="editUser-form-label"
-                    inputType="text"
                     id="email"
                     name="email"
+                    size="small"
                     classNameForInput="editUser-form-input" />
-                <FormElement 
-                    labelFor="phone" 
-                    labelText="Phone" 
+                <FormElement
+                    className="editUser-edit-form-element"
+                    labelFor="phone"
+                    labelText="Phone"
                     classNameForLabel="editUser-form-label"
-                    inputType="text"
                     id="phone"
                     name="phone"
+                    size="small"
                     classNameForInput="editUser-form-input" />
-                <FormElement 
-                    labelFor="location" 
-                    labelText="Location" 
+                <FormElement
+                    className="editUser-edit-form-element"
+                    labelFor="location"
+                    labelText="Location"
                     classNameForLabel="editUser-form-label"
-                    inputType="text"
                     id="location"
                     name="location"
+                    size="small"
                     classNameForInput="editUser-form-input" />
             </AtomForm>
         </div>

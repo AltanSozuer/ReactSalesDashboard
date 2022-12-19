@@ -1,16 +1,24 @@
+import { TextField  } from "@mui/material"
 export default function FormElement({
     labelFor,
     labelText,
-    inputType,
     id,
     name,
+    className,
     classNameForLabel,
-    classNameForInput
+    classNameForInput,
+    size,
+    value
 }){
     return (
-        <div>
+        <div className={ className }> 
             <label for={ labelFor } className={classNameForLabel} > { labelText } </label>
-            <input type={inputType} id={id} name={name} className={classNameForInput} /> 
+            <TextField 
+                id={id} 
+                name={name} 
+                size={size} 
+                value={value}
+                className={classNameForInput} />
         </div>
     )
 }

@@ -2,10 +2,11 @@ import "../styles/css/user.css"
 import "../styles/css/widget.css"
 import "../styles/css/shared/shadowbox.css"
 import AtomButton from "../components/atoms/AtomButton";
+import AtomIconButton from "../components/atoms/AtomIconButton"
 import { Link } from "react-router-dom"
 import AtomSpan from "../components/atoms/AtomSpan";
-import { PermIdentity, CalendarMonthOutlined, LocalPhoneOutlined, EmailOutlined, LocationOnOutlined } from '@mui/icons-material';
-import { Tooltip } from "@mui/material";
+import { PermIdentity, CalendarMonthOutlined, LocalPhoneOutlined, EmailOutlined, LocationOnOutlined, FileUpload } from '@mui/icons-material';
+import { Avatar, Tooltip } from "@mui/material";
 import UserEditForm from "../components/organisms/UserEditForm";
 
 export default function User(){
@@ -81,7 +82,22 @@ export default function User(){
                             <UserEditForm />
                         </div>
                         <div className="editUser-edit-upload-container">
-editUser-edit-upload-container
+                            <div className="editUser-edit-image-and-upload">
+                                <Avatar 
+                                    alt="Remy Sharp"
+                                    sx={{ width: 100, height: 100, borderRadius: 2, marginRight: "10px" }} 
+                                    src="https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+                                <AtomIconButton
+                                    text=""
+                                    size="small"
+                                    sx={{ bgcolor: "white"}}
+                                    children={ <FileUpload />} />
+                            </div>
+                            <AtomButton
+                                text="Update"
+                                size="small"
+                                variant="contained"
+                                sx={{ bgcolor: "success", padding: "5px 25px" ,marginBottom: "30px" }} />
                         </div>
                     </div>
                 </div>

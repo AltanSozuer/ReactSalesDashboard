@@ -77,7 +77,6 @@
 }
 
 .editUser-edit-container {
-    background-color: red;
     flex: 3;
 }
 
@@ -93,11 +92,35 @@
 
 .editUser-edit-form-container {
     flex: 2;
-    background-color: blue;
-    
+}
+
+.editUser-edit-form-element {
+    flex-direction: column;
+    display: flex;
+    margin: 10px;
+}
+
+.editUser-form-label {
+    font-size: 17px;
+    margin: 8px;
+}
+
+.editUser-form-input {
+    margin: 8px;
 }
 
 .editUser-edit-upload-container {
     flex: 1;
-    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-between;
+    align-items: center;
 }
+
+.editUser-edit-image-and-upload {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px ;
+}
+
