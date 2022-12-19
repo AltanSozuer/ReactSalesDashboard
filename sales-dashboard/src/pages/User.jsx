@@ -6,7 +6,7 @@ import AtomIconButton from "../components/atoms/AtomIconButton"
 import { Link } from "react-router-dom"
 import AtomSpan from "../components/atoms/AtomSpan";
 import { PermIdentity, CalendarMonthOutlined, LocalPhoneOutlined, EmailOutlined, LocationOnOutlined, FileUpload } from '@mui/icons-material';
-import { Avatar, Tooltip } from "@mui/material";
+import { Avatar, Tooltip} from "@mui/material";
 import UserEditForm from "../components/organisms/UserEditForm";
 
 export default function User(){
@@ -87,11 +87,24 @@ export default function User(){
                                     alt="Remy Sharp"
                                     sx={{ width: 100, height: 100, borderRadius: 2, marginRight: "10px" }} 
                                     src="https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&dpr=2&w=500" />
-                                <AtomIconButton
-                                    text=""
-                                    size="small"
-                                    sx={{ bgcolor: "white"}}
-                                    children={ <FileUpload />} />
+                                    <Tooltip title="Update Profile Image">
+                                        
+                                        <span>
+                                            <AtomIconButton
+                                                text=""
+                                                size="small"
+                                                sx={{ bgcolor: "white"}}
+                                                component="label"
+                                                children={ 
+                                                    <div>
+                                                        <FileUpload />
+                                                        <input hidden accept="image/*" type="file" />
+                                                    </div>
+                                                } />
+
+                                        </span>
+                                        
+                                    </Tooltip>
                             </div>
                             <AtomButton
                                 text="Update"

@@ -1,20 +1,11 @@
-import { AppBar, Toolbar, Box, IconButton, Typography, Button } from '@mui/material'
-import MenuIcon from '@mui/icons-material/Menu'
-
+import { AppBar, Toolbar, Typography, Button } from '@mui/material'
+import { TrendingUp } from '@mui/icons-material';
 export default function TopBar( props ) {
     return (
         
         <AppBar sx={{ position: "sticky", bgcolor: "#167" }}>
             <Toolbar sx={{ display: "flex" }}>
-                <IconButton
-                    size="large"
-                    edge="start"
-                    color="inherit"
-                    aria-label="menu"
-                    sx={{ mr: 2 }}
-                >
-                    <MenuIcon />
-                </IconButton>
+                <TrendingUp sx={{ marginRight: "5px"}} />
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                     Sales Monitoring
                 </Typography>
