@@ -27,8 +27,7 @@ export default function AtomIconButton({
             edge={ edge }
             className={ className }
             sx={ sx }
-            onClick= { onClick }
-        >
+            onClick= { onClick } >
            {text}
            {children}
         </IconButton>

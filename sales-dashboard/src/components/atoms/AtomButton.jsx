@@ -9,7 +9,8 @@ export default function AtomButton({
     size,
     component,
     onClick,
-    children
+    children,
+    sx
 }) {
     return (
         <Button
@@ -18,8 +19,8 @@ export default function AtomButton({
             disabled={ disabled }
             component={ component }
             size={ size }
-            onClick= { onClick }
-        >
+            sx={ sx }
+            onClick= { onClick } >
            {text}
            {children}
         </Button>
