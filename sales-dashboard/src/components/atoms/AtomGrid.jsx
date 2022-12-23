@@ -5,23 +5,13 @@ export default function AtomGrid({
     item,
     spacing,
     justifyContent,
+    alignItems,
     direction,
     xs,
     children,
     sx,
     className
 }){
-    console.log("asdasd: ", {
-        container,
-        item,
-        spacing,
-        justifyContent,
-        direction,
-        xs,
-        children,
-        sx,
-        className
-    })
     return (
         <Grid container={ container }
             item={ item }
@@ -29,6 +19,7 @@ export default function AtomGrid({
             spacing={ spacing }
             direction= { direction }
             justifyContent= { justifyContent }
+            alignItems= {alignItems}
             sx={ sx }
             className={ className }>
             {children}
@@ -42,5 +33,6 @@ AtomGrid.defaultProps = {
     item: false,
     direction: "row",
     justifyContent: "center",
+    alignItems: "flex-start",
     spacing: 0
 }

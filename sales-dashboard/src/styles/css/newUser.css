@@ -1,0 +1,30 @@
+.newuser-outer-container {
+    margin: 20px;
+}
+
+.newuser-header {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.newuser-inner-container {
+    margin-top: 40px;
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+.newuser-form-element {
+    flex-direction: column;
+    display: flex;
+}
+
+.newuser-form-label {
+    font-size: 18px;
+    margin: 6px;
+    color: black;
+}
+
+.newuser-form-input {
+    margin: 0px;
+}
+

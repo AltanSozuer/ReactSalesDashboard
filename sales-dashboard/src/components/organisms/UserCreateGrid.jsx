@@ -80,16 +80,18 @@ export default function UserCreateGrid(){
             <AtomGrid item xs={6}>
                 <FormSelectWithLabel
                     className="newuser-form-element"
-                    labelFor="status"
                     labelText="Status"
                     classNameForLabel="newuser-form-label"
                     id="status"
-                    name="status"
-                    size="small"
-                    classNameForInput="newuser-form-input" />
+                    size="small" />
             </AtomGrid>
-            <AtomGrid item xs={6}>
-                <AtomButton />
+            <AtomGrid container
+                direction="row" 
+                sx={{ marginTop: "20px" ,marginLeft: "100px"}} 
+                alignItems="flex-start" 
+                justifyContent="flex-start" >
+                <AtomButton text="Create" 
+                    sx={{ borderRadius: "10px", bgcolor: "#380AD0", padding: "10px 100px", textTransform: 'none' }} />
             </AtomGrid>
         </AtomGrid>
 
