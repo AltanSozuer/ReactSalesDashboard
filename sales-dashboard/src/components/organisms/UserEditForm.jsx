@@ -1,12 +1,12 @@
 import AtomForm from "../atoms/AtomForm";
-import FormElement from "../molecules/FormElement";
+import FormTextFieldWithLabel from "../molecules/FormTextFieldWithLabel";
 
 export default function UserEditForm() {
     // TODO: add "value" props to each component
     return (
         <div>
             <AtomForm>
-                <FormElement
+                <FormTextFieldWithLabel
                     className="editUser-edit-form-element"
                     labelFor="username"
                     labelText="Username"
@@ -15,7 +15,7 @@ export default function UserEditForm() {
                     name="username"
                     size="small"
                     classNameForInput="editUser-form-input" />
-                <FormElement
+                <FormTextFieldWithLabel
                     className="editUser-edit-form-element"
                     labelFor="fullname"
                     labelText="Fullname"
@@ -24,7 +24,7 @@ export default function UserEditForm() {
                     name="fullname"
                     size="small"
                     classNameForInput="editUser-form-input" />
-                <FormElement
+                <FormTextFieldWithLabel
                     className="editUser-edit-form-element"
                     labelFor="email"
                     labelText="Email"
@@ -33,7 +33,7 @@ export default function UserEditForm() {
                     name="email"
                     size="small"
                     classNameForInput="editUser-form-input" />
-                <FormElement
+                <FormTextFieldWithLabel
                     className="editUser-edit-form-element"
                     labelFor="phone"
                     labelText="Phone"
@@ -42,7 +42,7 @@ export default function UserEditForm() {
                     name="phone"
                     size="small"
                     classNameForInput="editUser-form-input" />
-                <FormElement
+                <FormTextFieldWithLabel
                     className="editUser-edit-form-element"
                     labelFor="location"
                     labelText="Location"
