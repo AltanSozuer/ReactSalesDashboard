@@ -5,18 +5,19 @@ export default function FormSelectWithLabel({
     className,
     classNameForLabel,
     labelText,
-    size
+    size,
+    value
 }) {
-    const [status, setStatus] = React.useState('Select');
+    const [status, setStatus] = React.useState(value);
 
     const handleChange = (event) => {
         setStatus(event.target.value);
     };
     return (
         <div className={className}>
-            <InputLabel id="status-select-label" className={classNameForLabel}>{labelText}</InputLabel>
+            <InputLabel id={id} className={classNameForLabel}>{labelText}</InputLabel>
             <Select
-                labelId="status-select-label"
+                labelId={id}
                 id={ id }
                 size={ size }
                 value={status}
@@ -29,4 +30,10 @@ export default function FormSelectWithLabel({
             </Select>
         </div>
     )
+}
+
+
+
+FormSelectWithLabel.defaultProps = {
+    value: "Select"
 }
