@@ -10,6 +10,9 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    border-color: thistle;
+    border-style: solid;
+    border-width: 1px;
     object-fit: cover;
     margin-right: 10px;
 }
