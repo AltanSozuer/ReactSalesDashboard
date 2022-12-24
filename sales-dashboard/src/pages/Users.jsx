@@ -6,11 +6,9 @@ import { Chip, Tooltip, Zoom } from '@mui/material';
 import { Edit, Delete } from "@mui/icons-material"
 import { userData } from '../DummyData/UserTable';
 import AtomIconButton from "../components/atoms/AtomIconButton"
+import { labelTypeDetector } from "../utils/utils"
 import { Link } from "react-router-dom"
 
-function labelTypeDetector(status) {
-  return (status === "Active") ? "success" : "warning"; 
-}
 
 
 export default function Users() {
