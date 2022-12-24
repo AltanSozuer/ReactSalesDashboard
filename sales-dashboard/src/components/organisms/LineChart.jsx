@@ -11,7 +11,7 @@ export default function LineCharts({
     chartMargin,
     lineDataKey,
     xAxisDataKey
-}){
+}){ 
     return (
         <div className='chart shadow-box' >
             <h3 className='chartTitle'>{ title }</h3>

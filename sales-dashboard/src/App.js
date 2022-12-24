@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import { Routes, Route } from 'react-router-dom'
 import Product from "./pages/Product";
 import Products from "./pages/Products";
+import NewProduct from "./pages/NewProduct";
 import User from "./pages/User";
 import Users from "./pages/Users";
 import NewUser from "./pages/NewUser";
@@ -26,6 +27,7 @@ function App() {
               <Route path={"/newUser"} element={ <NewUser />} />
               <Route path={"/product"} element={ <Products />} />
               <Route path={"/product/:id"} element={ <Product />} />
+              <Route path={"/newProduct"} element={ <NewProduct />} />
               <Route path={"/transaction"} element={ <Transactions />} />
               <Route path={"/sales"} element={ <Sales />} />
               <Route path={"/settings"} element={ <Settings />} />
