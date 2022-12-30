@@ -31,7 +31,7 @@ export default function Product(){
                              height={150}
                              data={MonthlySpecificProductSale}
                              xAxisDataKey="month"
-                             lineDataKey="Rate of Sale" />
+                             lineDataKey="Amount of Sale" />
 
                     </div>
                     <div className="product-info-details shadow-box">
@@ -78,14 +78,16 @@ export default function Product(){
                             classNameForLabel="product-edit-details-label"
                             id="stock"
                             size="small"
-                            value="Yes" />
+                            value="Yes"
+                            options={["Yes", "No"]} />
                         <FormSelectWithLabel
                             className="product-edit-details-elements"
                             labelText="Active"
                             classNameForLabel="product-edit-details-label"
                             id="isActive"
                             size="small"
-                            value="Yes" />
+                            value="Yes"
+                            options={["Yes", "No"]} />
                     </div>
                     <div className="product-edit-upload-container">
                         <div className="product-edit-upload-image-container">

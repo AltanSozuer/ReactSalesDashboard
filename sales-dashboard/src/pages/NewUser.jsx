@@ -8,9 +8,7 @@ export default function NewUser(){
             <span className="newuser-header">New User</span>
             <div className="newuser-inner-container"> 
                 <UserCreateGrid />
-
             </div>
-            
         </div>
     )
 }

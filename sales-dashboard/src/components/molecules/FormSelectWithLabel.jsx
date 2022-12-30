@@ -6,7 +6,8 @@ export default function FormSelectWithLabel({
     classNameForLabel,
     labelText,
     size,
-    value
+    value,
+    options
 }) {
     const [status, setStatus] = React.useState(value);
 
@@ -25,8 +26,9 @@ export default function FormSelectWithLabel({
                 inputProps={{ 'aria-label': 'Without label' }}
                 label={labelText}
                 onChange={handleChange} >
-                <MenuItem value={"Yes"}>Yes</MenuItem>
-                <MenuItem value={"No"}>No</MenuItem>
+                    {
+                        options.map( option => <MenuItem value={option}>{option}</MenuItem> )
+                    }
             </Select>
         </div>
     )

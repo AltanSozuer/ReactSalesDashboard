@@ -83,7 +83,8 @@ export default function UserCreateGrid(){
                     labelText="Status"
                     classNameForLabel="newuser-form-label"
                     id="status"
-                    size="small" />
+                    size="small"
+                    options={["Yes", "No"]} />
             </AtomGrid>
             <AtomGrid container
                 direction="row" 
