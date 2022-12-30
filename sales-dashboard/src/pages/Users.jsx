@@ -2,7 +2,7 @@ import "../styles/css/shared/shadowbox.css"
 import "../styles/css/userTable.css"
 import { useEffect, useState } from 'react';
 import { DataGrid } from '@mui/x-data-grid';
-import { Chip, Skeleton, Tooltip, Zoom } from '@mui/material';
+import { Chip, Tooltip, Zoom } from '@mui/material';
 import { Edit, Delete } from "@mui/icons-material"
 import { userData } from '../DummyData/UserTable';
 import AtomIconButton from "../components/atoms/AtomIconButton"
@@ -131,7 +131,7 @@ export default function Users() {
       ) : (
         <SkeletonForTable rowCount={10} />
       )}
-      
+
     </div>
   );
 }
