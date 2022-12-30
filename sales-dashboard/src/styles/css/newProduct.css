@@ -1,0 +1,45 @@
+.newproduct-outer-container {
+    margin: 10px;
+}
+
+.newproduct-header {
+    margin: 10px;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.newproduct-inner-container {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newproduct-form-input-container, .newproduct-form-upload-container {
+    flex: 1;
+    margin: 10px;
+}
+
+.newproduct-form-element-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.newproduct-form-label {
+    padding: 10px;
+    color: black;
+    font-size: large;
+}
+
+.newproduct-form-button {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newproduct-form-upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
