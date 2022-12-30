@@ -1,5 +1,5 @@
 import React from "react";
-import { InputLabel, MenuItem, Select } from "@mui/material"
+import { MenuItem, Select } from "@mui/material"
 export default function FormSelectWithLabel({
     id,
     className,
@@ -16,7 +16,7 @@ export default function FormSelectWithLabel({
     };
     return (
         <div className={className}>
-            <InputLabel id={id} className={classNameForLabel}>{labelText}</InputLabel>
+            <label id={id} className={classNameForLabel}>{labelText}</label>
             <Select
                 labelId={id}
                 id={ id }

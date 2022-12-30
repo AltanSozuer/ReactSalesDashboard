@@ -87,6 +87,8 @@
 .product-edit-details-elements {
     margin-bottom: 20px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .product-edit-upload-container {

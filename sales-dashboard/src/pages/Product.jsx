@@ -95,7 +95,7 @@ export default function Product(){
                             alt=""
                             sx={{ width: 100, height: 100, borderRadius: 2, marginRight: "10px" }} 
                             src="https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png" />
-                            <Tooltip title="Update Profile Image">
+                            <Tooltip title="Update Product Image">
                                 <span>
                                     <AtomIconButton
                                         text=""
