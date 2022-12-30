@@ -1,22 +1,29 @@
 import "../styles/css/shared/shadowbox.css"
 import "../styles/css/userTable.css"
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { DataGrid } from '@mui/x-data-grid';
-import { Chip, Tooltip, Zoom } from '@mui/material';
+import { Chip, Skeleton, Tooltip, Zoom } from '@mui/material';
 import { Edit, Delete } from "@mui/icons-material"
 import { userData } from '../DummyData/UserTable';
 import AtomIconButton from "../components/atoms/AtomIconButton"
 import { labelTypeDetector } from "../utils/utils"
 import { Link } from "react-router-dom"
-
-
+import SkeletonForTable from "../components/organisms/SkeletonForTable";
 
 export default function Users() {
-  const [ data, setData ] = useState(userData);
+  const [ data, setData ] = useState([]);
 
   const handleDeleteAction = ( id ) => {
     setData( data.filter( obj => obj.id !== id ))
   }
+
+  useEffect(() => {
+    const fakeAPICall = setTimeout(() => {
+      setData(userData)
+    }, 5000);
+
+    return () => clearTimeout(fakeAPICall);
+  }, [data])
 
   const columns = [
     { 
@@ -110,14 +117,21 @@ export default function Users() {
   return (
     <div className='shadow-box' 
          style={{ height: "80%", width: '95%', margin: "20px 10px" }}>
-      <DataGrid
-        rows={data}
-        columns={ columns}
-        pageSize={10}
-        autoPageSize
-        density="comfortable" 
-        disableSelectionOnClick
-        checkboxSelection />
+  
+      { data.length ? (
+        <DataGrid
+          rows={data}
+          columns={ columns}
+          pageSize={10}
+          autoPageSize
+          density="comfortable" 
+          disableSelectionOnClick
+          checkboxSelection
+           />
+      ) : (
+        <SkeletonForTable rowCount={10} />
+      )}
+      
     </div>
   );
 }
