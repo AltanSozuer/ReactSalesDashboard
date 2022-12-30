@@ -5,7 +5,7 @@ import LineCharts from "../components/organisms/LineChart";
 import UserWidget from "../components/organisms/UserWidget";
 import { ACTIVE_USER_COUNT } from "../DummyData/MonthlyActiveUser";
 
-export default function HomePage(props) {
+export default function HomePage() {
     return (
         <Box sx={{ flex: 4 }}>
             <InfoboxGroup />

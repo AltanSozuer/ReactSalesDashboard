@@ -1,9 +1,8 @@
 import "../../styles/css/widget.css"
 import "../../styles/css/shared/shadowbox.css"
-import AtomIconButton from "../atoms/AtomIconButton"
 import AtomSpan from "../atoms/AtomSpan"
 import { Visibility } from "@mui/icons-material"
-export default function UserWidget( props ) {
+export default function UserWidget( ) {
     return (
         <div className="small-outer-container shadow-box">
             <div className="widget-title">
