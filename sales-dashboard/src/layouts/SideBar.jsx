@@ -7,7 +7,7 @@ import {
     AttachMoney,
     Store
   } from "@mui/icons-material";
-import ListItemComposition from "../organisms/ListItemComposition";
+import ListItemComposition from "../components/organisms/ListItemComposition";
 
 
 export default function SideBar() {

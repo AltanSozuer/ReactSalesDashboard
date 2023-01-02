@@ -1,6 +1,6 @@
-import TopBar from "./components/common/TopBar";
+import TopBar from "./layouts/TopBar";
 import { Box, Stack } from "@mui/material";
-import SideBar from "./components/common/SideBar";
+import SideBar from "./layouts/SideBar";
 import HomePage from "./pages/HomePage";
 import { Routes, Route } from 'react-router-dom'
 import Product from "./pages/Product";
