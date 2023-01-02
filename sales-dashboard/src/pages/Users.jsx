@@ -11,7 +11,7 @@ import { Link } from "react-router-dom"
 import SkeletonForTable from "../components/organisms/SkeletonForTable";
 
 export default function Users() {
-  const [ data, setData ] = useState([]);
+  const [ data, setData ] = useState(null);
 
   const handleDeleteAction = ( id ) => {
     setData( data.filter( obj => obj.id !== id ))
@@ -118,7 +118,7 @@ export default function Users() {
     <div className='shadow-box' 
          style={{ height: "80%", width: '95%', margin: "20px 10px" }}>
   
-      { data.length ? (
+      { data ? (
         <DataGrid
           rows={data}
           columns={ columns}
