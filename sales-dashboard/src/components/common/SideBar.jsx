@@ -10,10 +10,10 @@ import {
 import ListItemComposition from "../organisms/ListItemComposition";
 
 
-export default function SideBar(props) {
+export default function SideBar() {
   return (
-      <Box bgcolor={"aliceblue"}  flex={1} p={2} sx={{ minHeight: "calc(150vh - 10px )" ,display: {  sm: "block" }, position:"sticky", top: 0 }}>
-          <List >
+      <Box bgcolor={"cadetblue"}  flex={1} p={2} sx={{ minHeight: "calc(130vh - 10px )" ,position:"sticky", top: 0 }}>
+          <List>
             <ListItemComposition to="/"
                   icon= { <Home />}
                   text="Homepage"
