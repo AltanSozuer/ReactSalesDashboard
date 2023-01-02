@@ -5,11 +5,9 @@ import { ArrowUpward, ArrowDownward } from "@mui/icons-material";
 
 export default function InfoBox({
     BoxTitle,
-    Amount,
-    amountRate,
+    data,
     SubTitle
 }) {
-    
         return (
             <div className="infoItem shadow-box">
                     <AtomSpan 
@@ -17,12 +15,15 @@ export default function InfoBox({
                         className="title" />
                     <div className="amountLine">
                         <AtomSpan 
-                            text={ Amount }
+                            text={ data.amount }
                             className="amount" />
                         <AtomSpan 
-                            text={ amountRate }
+                            text={ `${data.amountRate} %` }
                             className="amountRate">
-                            <ArrowUpward className="arrowUp"/>
+                            { (data.amountRate > 0) ?
+                                <ArrowUpward className="arrowUp"/> :
+                                <ArrowDownward className="arrowDown"/>  
+                            }
                         </AtomSpan>
                     </div>
                     <AtomSpan 

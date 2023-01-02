@@ -1,6 +1,10 @@
 import InfoBox from "../molecules/InfoBox"
 import "../../styles/css/infobox.css"
-
+import { 
+    INFOBOX_REVENUE,
+    INFOBOX_SALE,
+    INFOBOX_COST
+} from "../../DummyData/InfoboxData";
 
 export default function InfoxboxGroup() {
     return (
@@ -8,18 +12,15 @@ export default function InfoxboxGroup() {
 
                 <InfoBox 
                     BoxTitle="Revenue"
-                    Amount="$896"
-                    amountRate="+2.7"
+                    data={INFOBOX_REVENUE}
                     SubTitle="Compared to last month"/>
                 <InfoBox 
                     BoxTitle="Sales"
-                    Amount="$2,342"
-                    amountRate="+3.8"
+                    data={INFOBOX_SALE}
                     SubTitle="Compared to last month"/>
                 <InfoBox 
                     BoxTitle="Cost"
-                    Amount="$1,097"
-                    amountRate="-1.2"
+                    data={INFOBOX_COST}
                     SubTitle="Compared to last month"/>
            
             </div>
