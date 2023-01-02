@@ -15,7 +15,7 @@ export default function InfoBox({
                         className="title" />
                     <div className="amountLine">
                         <AtomSpan 
-                            text={ data.amount }
+                            text={ `$${data.amount}` }
                             className="amount" />
                         <AtomSpan 
                             text={ `${data.amountRate} %` }

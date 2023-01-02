@@ -9,9 +9,9 @@ export default function ListItemComposition({
     disablePadding
 }) {
     return (
-        <ListItem disablePadding={ disablePadding }  sx={{ "&:hover": { backgroundColor: "cyan", width: "inherit" } }}>
+        <ListItem disablePadding={ disablePadding }  sx={{ "&:hover": { backgroundColor: "blueviolet", width: "inherit"} }}>
             <Link to={ to } className="linkRoute" >
-                <ListItemButton  sx={{ "&:hover": { backgroundColor: "inherit", fullWidth: true} }}>
+                <ListItemButton sx={{ "&:hover": { backgroundColor: "inherit", fullWidth: true , color: "white" } }}>
                     <div className="iconAndTextContainer">
                         <ListItemIcon >
                             { icon }
