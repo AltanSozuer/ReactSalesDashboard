@@ -4,7 +4,7 @@ import {
     Home,
     Settings,
     Storefront,
-    AttachMoney,
+    ShoppingCart,
     Store
   } from "@mui/icons-material";
 import ListItemComposition from "../components/organisms/ListItemComposition";
@@ -30,9 +30,9 @@ export default function SideBar() {
                   icon= { <Storefront  />}
                   text="Sales"
                   disablePadding={true} />
-            <ListItemComposition to="/transaction"
-                  icon= { <AttachMoney />}
-                  text="Transactions"
+            <ListItemComposition to="/order"
+                  icon= { <ShoppingCart />}
+                  text="Orders"
                   disablePadding={true} />
 
             <ListItemComposition to="/settings"

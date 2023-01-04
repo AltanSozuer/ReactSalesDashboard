@@ -9,7 +9,7 @@ import NewProduct from "./pages/NewProduct";
 import User from "./pages/User";
 import Users from "./pages/Users";
 import NewUser from "./pages/NewUser";
-import Transactions from "./pages/Transactions";
+import Orders from "./pages/Orders";
 import Sales from "./pages/Sales";
 import Settings from "./pages/Settings";
 import ErrorPage from "./pages/ErrorPage";
@@ -28,7 +28,7 @@ function App() {
               <Route path={"/product"} element={ <Products />} />
               <Route path={"/product/:id"} element={ <Product />} />
               <Route path={"/newProduct"} element={ <NewProduct />} />
-              <Route path={"/transaction"} element={ <Transactions />} />
+              <Route path={"/order"} element={ <Orders />} />
               <Route path={"/sales"} element={ <Sales />} />
               <Route path={"/settings"} element={ <Settings />} />
               <Route path="*" element={ <ErrorPage />} />
