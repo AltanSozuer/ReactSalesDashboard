@@ -17,8 +17,7 @@ export default function AtomMenu({
             id={ id }
             open={ Boolean(anchorEl) }
             onClose={ handleClose }
-            sx={sx}
-            >
+            sx={sx}>
             { children }
         </Menu>
     )

@@ -30,7 +30,7 @@ export default function ProfileMenu(){
                     anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
                     disableScrollLock={ true }>
                     <MenuItem onClick={handleClose}>Profile</MenuItem>
-                    <MenuItem onClick={handleClose}>My account</MenuItem>
+                    <MenuItem onClick={handleClose}>Settings</MenuItem>
                     <MenuItem onClick={handleClose}>Logout</MenuItem>
                 </Menu>
         </div>
